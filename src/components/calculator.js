@@ -14,12 +14,12 @@ const Calculator = () => (
           <th colSpan={4}>0</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="body">
         <tr>
           <td>AC</td>
           <td>+/-</td>
           <td>%</td>
-          <td>
+          <td className="sign">
             {' '}
             <TbDivide />
             {' '}
@@ -29,7 +29,7 @@ const Calculator = () => (
           <td>7</td>
           <td>8</td>
           <td>9</td>
-          <td>
+          <td className="sign">
             {' '}
             <TiTimes />
             {' '}
@@ -39,7 +39,7 @@ const Calculator = () => (
           <td>4</td>
           <td>5</td>
           <td>6</td>
-          <td>
+          <td className="sign">
             {' '}
             <BiMinus />
             {' '}
@@ -49,7 +49,7 @@ const Calculator = () => (
           <td>1</td>
           <td>2</td>
           <td>3</td>
-          <td>
+          <td className="sign">
             {' '}
             <MdAdd />
             {' '}
@@ -62,7 +62,7 @@ const Calculator = () => (
             <VscDebugStackframeDot />
             {' '}
           </td>
-          <td>
+          <td className="sign">
             {' '}
             <TbEqual />
             {' '}
