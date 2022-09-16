@@ -11,7 +11,6 @@ class Calculator extends React.PureComponent {
       next: null,
       operation: null,
     };
-    // this.clickHandle = this.clickHandle.bind(this);
   }
 
     clickHandle = (e) => {
