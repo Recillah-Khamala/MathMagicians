@@ -1,76 +1,47 @@
 // import React, { useEffect, useState } from 'react';
-import * as ReactBootstrap from 'react-bootstrap';
-import { TbDivide, TbEqual } from 'react-icons/tb';
-import { TiTimes } from 'react-icons/ti';
-import { BiMinus } from 'react-icons/bi';
-import { MdAdd } from 'react-icons/md';
-import { VscDebugStackframeDot } from 'react-icons/vsc';
+import React from 'react';
 
-const Calculator = () => (
-  <div>
-    <ReactBootstrap.Table className="table">
-      <thead>
-        <tr className="head">
-          <th colSpan={4}>0</th>
-        </tr>
-      </thead>
-      <tbody className="body">
-        <tr>
-          <td>AC</td>
-          <td>+/-</td>
-          <td>%</td>
-          <td className="sign">
-            {' '}
-            <TbDivide />
-            {' '}
-          </td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td className="sign">
-            {' '}
-            <TiTimes />
-            {' '}
-          </td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td className="sign">
-            {' '}
-            <BiMinus />
-            {' '}
-          </td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td className="sign">
-            {' '}
-            <MdAdd />
-            {' '}
-          </td>
-        </tr>
-        <tr>
-          <td colSpan={2}>0</td>
-          <td>
-            {' '}
-            <VscDebugStackframeDot />
-            {' '}
-          </td>
-          <td className="sign">
-            {' '}
-            <TbEqual />
-            {' '}
-          </td>
-        </tr>
-      </tbody>
-    </ReactBootstrap.Table>
-  </div>
-);
+class Calculator extends React.PureComponent {
+  render() {
+    return (
+      <div className="calculator">
+        <div className="card">
+          <div className="calcKeys firstRow">
+            <input type="text" className="CalcScreen" value="0" />
+          </div>
+          <div className="calcKeys secondRow">
+            <input type="button" value="AC" />
+            <input type="button" value="+/-" />
+            <input type="button" value="%" />
+            <input type="button" value="÷" className="operator" />
+          </div>
+          <div className="calcKeys thirdRow">
+            <input type="button" value="7" />
+            <input type="button" value="8" />
+            <input type="button" value="9" />
+            <input type="button" value="*" className="operator" />
+          </div>
+          <div className="calcKeys fourthRow">
+            <input type="button" value="4" />
+            <input type="button" value="5" />
+            <input type="button" value="6" />
+            <input type="button" value="-" className="operator" />
+          </div>
+          <div className="calcKeys fifthRow">
+            <input type="button" value="1" />
+            <input type="button" value="2" />
+            <input type="button" value="3" />
+            <input type="button" value="+" className="operator" />
+          </div>
+          <div className="calcKeys sixthRow">
+            <input type="button" value="0" className="first" />
+            <input type="button" value="." />
+            <input type="button" value="=" className="operator" />
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Calculator;
