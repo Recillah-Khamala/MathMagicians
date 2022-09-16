@@ -50,11 +50,11 @@ input[type=button] {
   font-size: 16px;
 }
 
-input[type=button] input[type=button]:active {
+input[type=button] input[type=button]:active, span:active{
   background: #ccc;
 }
 
-.firstRow input {
+.firstRow, .calcScreen input {
   width: 100%;
   height: 60px;
   background: #858694;
