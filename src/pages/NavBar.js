@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './NavBar.module.css';
 
 const LINKS = [
-  { to: '/home', text: 'Home' },
+  { to: '/', text: 'Home' },
   { to: '/calculator', text: 'Calculator' },
   { to: '/about', text: 'About' },
 ];
@@ -15,7 +15,10 @@ const NavBar = () => (
       {LINKS.map((item) => (
         <li key={item.to}>
           {' '}
-          <NavLink to={item.to} className={styles.NavLink}>
+          <NavLink
+            to={item.to}
+            className={styles.NavLink}
+          >
             {item.text}
           </NavLink>
         </li>
