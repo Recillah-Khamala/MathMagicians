@@ -11,7 +11,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <h1>Lets do some maths</h1>
+      <h1>Lets do some math!</h1>
       <div className="card">
         <div className="calcKeys firstRow">
           <span className="CalcScreen">
