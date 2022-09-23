@@ -50,5 +50,4 @@ describe('calculate', () => {
     const result = { total: '4', next: '2.0', operation: null };
     expect(calculate(data, '.')).toEqual(result);
   });
-
 });
